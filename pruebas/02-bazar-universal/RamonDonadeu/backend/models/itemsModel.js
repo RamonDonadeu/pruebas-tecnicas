@@ -10,7 +10,6 @@ const getProductByQuery = (query) => {
     let found = false;
     for (const key in product) {
       if (typeof product[key] === "string" && product[key].includes(query)) {
-        console.log(product);
         found = true;
         break;
       }
