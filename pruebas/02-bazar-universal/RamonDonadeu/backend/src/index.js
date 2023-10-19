@@ -3,7 +3,8 @@ const { json } = require("express");
 const itemsRoute = require("./routes/itemsRoute.js");
 const cors = require("cors");
 const app = express();
-const port = 3000;
+// If ENV=production, port=443, else port=3000
+const port = process.env.PORT || 443;
 
 app.use(cors());
 app.use(json());
