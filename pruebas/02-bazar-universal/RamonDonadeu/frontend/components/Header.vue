@@ -21,6 +21,7 @@ const route = useRoute();
 
 onMounted(() => {
   search.value = route.query.search || "";
+  fetch();
 });
 </script>
 <style>
