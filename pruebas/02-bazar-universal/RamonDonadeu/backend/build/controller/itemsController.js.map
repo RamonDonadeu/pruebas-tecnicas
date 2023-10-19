@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["../../src/controller/itemsController.js"],
+  "sourcesContent": ["const { Router } = require(\"express\");\r\nconst { getItemById, getItemsByQuery } = require(\"../service/itemsService.js\");\r\nconst router = Router();\r\n\r\nconst getItem = (req, res) => {\r\n  const item = getItemById(parseInt(req.params.id));\r\n  res.send(item);\r\n};\r\n\r\nconst getItemsQuery = (req, res) => {\r\n  const itemList = getItemsByQuery(req.query.q);\r\n  res.send(itemList);\r\n};\r\n\r\nmodule.exports = { getItem, getItemsQuery };\r\n"],
+  "mappings": ";AAAA,MAAM,EAAE,OAAO,IAAI,QAAQ,SAAS;AACpC,MAAM,EAAE,aAAa,gBAAgB,IAAI,QAAQ,4BAA4B;AAC7E,MAAM,SAAS,OAAO;AAEtB,MAAM,UAAU,CAAC,KAAK,QAAQ;AAC5B,QAAM,OAAO,YAAY,SAAS,IAAI,OAAO,EAAE,CAAC;AAChD,MAAI,KAAK,IAAI;AACf;AAEA,MAAM,gBAAgB,CAAC,KAAK,QAAQ;AAClC,QAAM,WAAW,gBAAgB,IAAI,MAAM,CAAC;AAC5C,MAAI,KAAK,QAAQ;AACnB;AAEA,OAAO,UAAU,EAAE,SAAS,cAAc;",
+  "names": []
+}

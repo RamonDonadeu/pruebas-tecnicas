@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["../src/index.js"],
+  "sourcesContent": ["const express = require(\"express\");\r\nconst { json } = require(\"express\");\r\nconst itemsRoute = require(\"./routes/itemsRoute.js\");\r\nconst cors = require(\"cors\");\r\nconst app = express();\r\nconst port = 3000;\r\n\r\napp.use(cors());\r\napp.use(json());\r\n\r\napp.use(\"/api/item\", itemsRoute);\r\n\r\napp.listen(port, () => {\r\n  console.log(`Server listening on port ${port}`);\r\n});\r\n"],
+  "mappings": ";AAAA,MAAM,UAAU,QAAQ,SAAS;AACjC,MAAM,EAAE,KAAK,IAAI,QAAQ,SAAS;AAClC,MAAM,aAAa,QAAQ,wBAAwB;AACnD,MAAM,OAAO,QAAQ,MAAM;AAC3B,MAAM,MAAM,QAAQ;AACpB,MAAM,OAAO;AAEb,IAAI,IAAI,KAAK,CAAC;AACd,IAAI,IAAI,KAAK,CAAC;AAEd,IAAI,IAAI,aAAa,UAAU;AAE/B,IAAI,OAAO,MAAM,MAAM;AACrB,UAAQ,IAAI,4BAA4B,IAAI,EAAE;AAChD,CAAC;",
+  "names": []
+}
