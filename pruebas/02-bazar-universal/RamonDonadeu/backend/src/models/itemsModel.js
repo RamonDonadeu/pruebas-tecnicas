@@ -1,5 +1,4 @@
-const products = require("../data/products.json");
-
+import products from "../../src/data/products.json";
 const getProductById = (id) => {
   console.log(id);
   return products.products.find((product) => product.id === id);
