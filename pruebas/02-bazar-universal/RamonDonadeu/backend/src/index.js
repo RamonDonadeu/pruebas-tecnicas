@@ -1,6 +1,7 @@
-import express, { json } from "express";
-import itemsRoute from "./routes/itemsRoute.js";
-import cors from "cors";
+const express = require("express");
+const { json } = require("express");
+const itemsRoute = require("./routes/itemsRoute.js");
+const cors = require("cors");
 const app = express();
 const port = 3000;
 
