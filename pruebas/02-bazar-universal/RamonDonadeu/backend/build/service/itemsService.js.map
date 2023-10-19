@@ -1,7 +1,0 @@
-{
-  "version": 3,
-  "sources": ["../../src/service/itemsService.js"],
-  "sourcesContent": ["const { Router } = require(\"express\");\r\nconst {\r\n  getProductById,\r\n  getProductByQuery,\r\n} = require(\"../models/itemsModel.js\");\r\nconst router = Router();\r\n\r\nconst getItemById = (id) => {\r\n  return getProductById(id);\r\n};\r\n\r\nconst getItemsByQuery = (query) => {\r\n  return getProductByQuery(query);\r\n};\r\n\r\nmodule.exports = { getItemById, getItemsByQuery };\r\n"],
-  "mappings": ";AAAA,MAAM,EAAE,OAAO,IAAI,QAAQ,SAAS;AACpC,MAAM;AAAA,EACJ;AAAA,EACA;AACF,IAAI,QAAQ,yBAAyB;AACrC,MAAM,SAAS,OAAO;AAEtB,MAAM,cAAc,CAAC,OAAO;AAC1B,SAAO,eAAe,EAAE;AAC1B;AAEA,MAAM,kBAAkB,CAAC,UAAU;AACjC,SAAO,kBAAkB,KAAK;AAChC;AAEA,OAAO,UAAU,EAAE,aAAa,gBAAgB;",
-  "names": []
-}

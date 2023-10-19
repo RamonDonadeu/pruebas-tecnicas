@@ -1,7 +1,0 @@
-{
-  "version": 3,
-  "sources": ["../../src/routes/itemsRoute.js"],
-  "sourcesContent": ["const { Router } = require(\"express\");\r\nconst { getItem, getItemsQuery } = require(\"../controller/itemsController.js\");\r\nconst router = Router();\r\n\r\n// GET all items\r\nrouter.get(\"/:id\", getItem);\r\n\r\n// GET item by  `/api/items?q=:query`\r\nrouter.get(\"/\", getItemsQuery);\r\n\r\nmodule.exports = router;\r\n"],
-  "mappings": ";AAAA,MAAM,EAAE,OAAO,IAAI,QAAQ,SAAS;AACpC,MAAM,EAAE,SAAS,cAAc,IAAI,QAAQ,kCAAkC;AAC7E,MAAM,SAAS,OAAO;AAGtB,OAAO,IAAI,QAAQ,OAAO;AAG1B,OAAO,IAAI,KAAK,aAAa;AAE7B,OAAO,UAAU;",
-  "names": []
-}

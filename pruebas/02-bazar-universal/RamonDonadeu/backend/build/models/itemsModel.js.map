@@ -1,7 +1,0 @@
-{
-  "version": 3,
-  "sources": ["../../src/models/itemsModel.js"],
-  "sourcesContent": ["const products = require(\"../data/products.json\");\r\n\r\nconst getProductById = (id) => {\r\n  console.log(id);\r\n  return products.products.find((product) => product.id === id);\r\n};\r\n\r\nconst getProductByQuery = (query) => {\r\n  return products.products.filter((product) => {\r\n    let found = false;\r\n    for (const key in product) {\r\n      if (typeof product[key] === \"string\" && product[key].includes(query)) {\r\n        found = true;\r\n        break;\r\n      }\r\n    }\r\n    return found;\r\n  });\r\n};\r\n\r\nmodule.exports = { getProductById, getProductByQuery };\r\n"],
-  "mappings": ";AAAA,MAAM,WAAW,QAAQ,uBAAuB;AAEhD,MAAM,iBAAiB,CAAC,OAAO;AAC7B,UAAQ,IAAI,EAAE;AACd,SAAO,SAAS,SAAS,KAAK,CAAC,YAAY,QAAQ,OAAO,EAAE;AAC9D;AAEA,MAAM,oBAAoB,CAAC,UAAU;AACnC,SAAO,SAAS,SAAS,OAAO,CAAC,YAAY;AAC3C,QAAI,QAAQ;AACZ,eAAW,OAAO,SAAS;AACzB,UAAI,OAAO,QAAQ,GAAG,MAAM,YAAY,QAAQ,GAAG,EAAE,SAAS,KAAK,GAAG;AACpE,gBAAQ;AACR;AAAA,MACF;AAAA,IACF;AACA,WAAO;AAAA,EACT,CAAC;AACH;AAEA,OAAO,UAAU,EAAE,gBAAgB,kBAAkB;",
-  "names": []
-}
