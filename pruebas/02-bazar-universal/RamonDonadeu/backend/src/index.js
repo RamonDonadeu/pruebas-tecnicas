@@ -1,10 +1,8 @@
-const express = require("express");
-const { json } = require("express");
-const itemsRoute = require("./routes/itemsRoute.js");
-const cors = require("cors");
+import express, { json } from "express";
+import itemsRoute from "./routes/itemsRoute.js";
+import cors from "cors";
 const app = express();
-// If ENV=production, port=443, else port=3000
-const port = process.env.PORT || 443;
+const port = 3000;
 
 app.use(cors());
 app.use(json());
