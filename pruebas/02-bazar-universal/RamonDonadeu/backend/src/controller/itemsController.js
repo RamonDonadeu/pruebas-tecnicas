@@ -8,7 +8,7 @@ const getItem = (req, res) => {
 };
 
 const getItemsQuery = (req, res) => {
-  const itemList = getItemsByQuery(req.query.q.toLowerCase());
+  const itemList = getItemsByQuery(req.query.search.toLowerCase());
   res.send(itemList);
 };
 
