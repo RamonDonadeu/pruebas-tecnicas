@@ -8,6 +8,9 @@ const getItem = (req, res) => {
 };
 
 const getItemsQuery = (req, res) => {
+  if (!req.query.search) {
+    req.query.search = "";
+  }
   const itemList = getItemsByQuery(req.query.search.toLowerCase());
   res.send(itemList);
 };
